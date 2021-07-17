@@ -1,0 +1,30 @@
+.ItemCountContainer {
+    height: auto;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid black;
+}
+
+.ItemCountContainer div {
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ItemCountContainer div button {
+    border: none;
+    background-color: transparent;
+    color: black;
+}
+
+.ItemCountContainer button {
+    background-color: cadetblue;
+    color: white;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 10px;
+}
