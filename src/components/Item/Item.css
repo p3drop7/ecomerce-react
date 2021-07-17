@@ -1,0 +1,20 @@
+.Item {
+    padding: 20px 0px;
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Item img {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Item p {
+    padding: 0px;
+    margin: 0px;
+} 

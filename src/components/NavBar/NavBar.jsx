@@ -10,7 +10,7 @@ function NavBar() {
     return (
 
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="navMenu" >
-            <Navbar.Brand href="#home" className="brand">Peter's Games Store</Navbar.Brand>
+            <Navbar.Brand href="#home" className="brand">Peter's Clothing Store</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <CartWidget />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -18,10 +18,10 @@ function NavBar() {
                     <Nav.Link href="#features">Home</Nav.Link>
                     <Nav.Link href="#pricing">News</Nav.Link>
                     <NavDropdown title="Categories" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">PC</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Nintendo</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Playstation</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Xbox</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1">Shirts</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Pants</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Shoes</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Accesories</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#pricing">Contact</Nav.Link>
                 </Nav>

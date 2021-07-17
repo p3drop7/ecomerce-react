@@ -1,14 +1,11 @@
 .ItemCountContainer {
     height: auto;
-    width: 250px;
-    padding: 10px;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    border: 1px solid black;
 }
 
 .ItemCountContainer div {
-    padding: 10px 0px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
