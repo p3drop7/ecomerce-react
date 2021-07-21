@@ -1,0 +1,8 @@
+.ItemDetailContainer {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: center;
+    align-self: center;
+}

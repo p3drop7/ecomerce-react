@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './ItemDetailContainer.css'
 import { getItems } from './GetItems'
 import ItemDetail from './ItemDetail'
 
@@ -17,7 +18,7 @@ function ItemDetailContainer() {
     }, [])
 
     return (
-        <div>
+        <div className="ItemDetailContainer">
             {   item && (
                     <ItemDetail 
                     name={item.name} 
