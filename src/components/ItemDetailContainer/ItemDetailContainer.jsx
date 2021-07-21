@@ -4,7 +4,7 @@ import ItemDetail from './ItemDetail'
 
 function ItemDetailContainer() {
 
-    const [item, setItem] = useState({})
+    const [item, setItem] = useState(false)
 
     useEffect(() => {
         setTimeout(()=>{
@@ -18,11 +18,14 @@ function ItemDetailContainer() {
 
     return (
         <div>
-            <ItemDetail 
-                name={item.name} 
-                price={item.price} 
-                pictureURL={item.pictureURL} 
-            />
+            {   item && (
+                    <ItemDetail 
+                    name={item.name} 
+                    price={item.price} 
+                    pictureURL={item.pictureURL} 
+                    />
+                ) 
+            }
         </div>
     )
 }
