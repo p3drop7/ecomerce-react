@@ -7,7 +7,7 @@ function Item({title, stock, price, pictureURL}) {
         <div className="Item">
             <img src={pictureURL} alt={title} />
             <p>{title}</p>
-            <p>{price}</p>
+            <p>${price}</p>
             <ItemCount stock={stock} initial={1}/>
         </div>
     )

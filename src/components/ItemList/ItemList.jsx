@@ -19,11 +19,11 @@ function ItemList() {
 
             if(status === 200){
                 setTimeout(()=>{
-                    setItems(data)
+                    resolve(data)
                 }, 2000)
             }else{
                 setTimeout(()=>{
-                    reject("Error")
+                    reject("Status other than 200")
                 }, 2000)
             }
         })
@@ -31,8 +31,8 @@ function ItemList() {
         const getPromise = () => promise
     
         getPromise()
-            .then(res => {console.log("Loaded " + res)})
-            .catch(err => {console.log("Error " + err)})
+            .then(res => {setItems(res)})
+            .catch(err => {console.log("Error: " + err)})
             .finally(()=> {console.log("Finish")})
     }, [])
 
